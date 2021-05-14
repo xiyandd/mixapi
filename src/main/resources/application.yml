@@ -1,0 +1,18 @@
+server:
+  port: 8808
+spring:
+  application:
+    name: api-gateway
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: TRACE
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
